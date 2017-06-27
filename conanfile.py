@@ -6,7 +6,7 @@ class StrawberryperlConan(ConanFile):
     name = "strawberryperl"
     version = "5.26.0"
     license = "GNU Public License or the Artistic License."
-    url = "git@github.com:lasote/conan-strawberryperl.git"
+    url = "https://github.com/lasote/conan-strawberryperl"
     settings = "os", "arch"
     description = "Strawbery Perl for Windows. Useful as build_require"
 
