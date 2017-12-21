@@ -7,7 +7,7 @@ import os
 class StrawberryperlConan(ConanFile):
     name = "strawberryperl"
     version = "5.26.0"
-    license = "GNU Public License or the Artistic License."
+    license = "GNU Public License or the Artistic License"
     url = "https://github.com/lasote/conan-strawberryperl"
     if conan_version < Version("1.0.0"):
         settings = "os", "arch"
