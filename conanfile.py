@@ -9,7 +9,7 @@ class StrawberryperlConan(ConanFile):
     version = "5.26.0"
     license = "GNU Public License or the Artistic License"
     url = "https://github.com/lasote/conan-strawberryperl"
-    if conan_version < Version("1.0.0"):
+    if conan_version < Version("0.99"):
         settings = "os", "arch"
     else:
         settings = "os_build", "arch_build"
