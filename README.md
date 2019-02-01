@@ -13,14 +13,14 @@ The packages generated with this **conanfile** can be found in [Bintray](https:/
 
 ### Basic setup
 
-    $ conan install strawberryperl/5.26.0@conan/stable
+    $ conan install strawberryperl/5.28.1.1@conan/stable
 
 ### Project setup
 
 You can use this build require directly from a Conan profile or a *conanfile.txt*.
 
     [build_requires]
-    strawberryperl/5.26.0@conan/stable
+    strawberryperl/5.28.1.1@conan/stable
 
 ## License
 

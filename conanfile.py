@@ -6,7 +6,7 @@ import os
 
 class StrawberryperlConan(ConanFile):
     name = "strawberryperl"
-    version = "5.26.0"
+    version = "5.28.1.1"
     description = "Strawbery Perl for Windows. Useful as build_require"
     license = "GNU Public License or the Artistic License"
     homepage = "http://strawberryperl.com"
@@ -30,9 +30,9 @@ class StrawberryperlConan(ConanFile):
             raise Exception("Only windows supported for strawberry perl")
 
     def build(self):
-        installer = {"x86": "strawberry-perl-5.26.0.1-32bit-portable.zip",
-                     "x86_64": "strawberry-perl-5.26.0.1-64bit-portable.zip"}[str(self.arch)]
-        url = ("%s/download/5.26.0.1/%s" % (self.homepage, installer))
+        installer = {"x86": "strawberry-perl-5.28.1.1-32bit-portable.zip",
+                     "x86_64": "strawberry-perl-5.28.1.1-64bit-portable.zip"}[str(self.arch)]
+        url = ("%s/download/5.28.1.1/%s" % (self.homepage, installer))
         tools.download(url, filename="perl.zip")
         tools.unzip("perl.zip")
         os.unlink("perl.zip")
