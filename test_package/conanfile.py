@@ -3,10 +3,8 @@ from conans import CMake
 import os
 
 class DefaultNameConan(ConanFile):
-    name = "DefaultName"
-    version = "0.1"
     settings = "os", "arch"
-        
+
     def test(self):
-        self.run("perl --version")
-        assert os.path.exists(os.path.join(self.deps_cpp_info["strawberryperl"].rootpath, "License.rtf"))
+        self.run("perl --version", run_environment=True)
+        self.run('perl -e \'print "Hello World\n"\'', run_environment=True)
