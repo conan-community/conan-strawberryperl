@@ -7,4 +7,4 @@ class DefaultNameConan(ConanFile):
 
     def test(self):
         self.run("perl --version", run_environment=True)
-        self.run('perl -e \'print "Hello World\n"\'', run_environment=True)
+        self.run("perl {}".format(os.path.join(self.source_folder, "listdir.pl")), run_environment=True)
